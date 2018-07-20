@@ -7,7 +7,7 @@ var chokidar = require( 'chokidar' );
 
 var screenshot_dir = 'path/to/screenshots';
 
-chokidar.watch(screenshot_dir).on('change', (event, path) => {
+chokidar.watch(screenshot_dir).on('add', (event, path) => {
   var file = fs.readFileSync( path );
 
   request.post( { url: 'http://api_url_here', body: file, }, ( err, res, body ) => {
