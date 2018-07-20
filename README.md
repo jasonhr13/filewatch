@@ -2,7 +2,7 @@
 Watch for files in directory and then do something
 
 # Install
-Download and Install NodeJS then run `npm install` this directory.
+Download and Install NodeJS then run `npm install` in this directory.
 
 ### Dependencies
 `npm install -g pm2`
